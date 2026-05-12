@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- FAVICON -->
+<link
+  rel="icon"
+  href="assets/icons/favicon.png"
+>
+
+<!-- PWA MANIFEST -->
+<link
+  rel="manifest"
+  href="manifest.json"
+>
+
+<!-- THEME COLOR -->
+<meta
+  name="theme-color"
+  content="#1e88e5"
+>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>TravelNest | Feedback & Support</title>
+
+  <meta
+    name="description"
+    content="Send feedback and get support using TravelNest."
+  >
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <nav class="navbar container">
+
+      <h1 class="logo">TravelNest</h1>
+
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="explorer.html">Explorer</a></li>
+
+        <li><a href="budget.html">Budget Planner</a></li>
+
+        <li><a href="generator.html">Trip Generator</a></li>
+
+        <li><a href="mood.html">Travel Mood</a></li>
+
+        <li><a href="feedback.html">Feedback</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <section class="feedback-section">
+
+      <h2 class="section-title">
+        Feedback & Support
+      </h2>
+
+      <!-- FORM -->
+      <form
+        id="feedbackForm"
+        class="feedback-form"
+      >
+
+        <!-- NAME -->
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        >
+
+        <!-- EMAIL -->
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          required
+        >
+
+        <!-- MESSAGE -->
+        <textarea
+          id="message"
+          rows="6"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button
+          type="submit"
+          class="btn"
+        >
+          Submit Feedback
+        </button>
+
+      </form>
+
+      <!-- SUCCESS -->
+      <p id="feedbackSuccess"></p>
+
+      <!-- FAQ -->
+      <div class="faq-section">
+
+        <h2 class="section-title">
+          Frequently Asked Questions
+        </h2>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item">
+
+          <button class="faq-question">
+            How does TravelNest work?
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              TravelNest helps users discover destinations,
+              plan trips, and manage travel inspiration.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item">
+
+          <button class="faq-question">
+            Can I save my wishlist?
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. Wishlists are stored using localStorage.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item">
+
+          <button class="faq-question">
+            Is the platform mobile-friendly?
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. TravelNest is fully responsive
+              for mobile, tablet, and desktop.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="js/utils.js"></script>
+  <script src="js/feedback.js"></script>
+
+</body>
+</html>

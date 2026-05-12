@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- FAVICON -->
+<link
+  rel="icon"
+  href="assets/icons/favicon.png"
+>
+
+<!-- PWA MANIFEST -->
+<link
+  rel="manifest"
+  href="manifest.json"
+>
+
+<!-- THEME COLOR -->
+<meta
+  name="theme-color"
+  content="#1e88e5"
+>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>TravelNest | Travel Mood</title>
+
+  <meta
+    name="description"
+    content="Enjoy travel sounds and track your destinations using TravelNest."
+  >
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <nav class="navbar container">
+
+      <h1 class="logo">TravelNest</h1>
+
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="explorer.html">Explorer</a></li>
+
+        <li><a href="budget.html">Budget Planner</a></li>
+
+        <li><a href="generator.html">Trip Generator</a></li>
+
+        <li><a href="mood.html">Travel Mood</a></li>
+
+        <li><a href="feedback.html">Feedback</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <section class="mood-section">
+
+      <h2 class="section-title">
+        Travel Mood Experience
+      </h2>
+
+      <!-- AUDIO CONTROLS -->
+      <div class="audio-grid">
+
+        <!-- BEACH -->
+        <div class="audio-card">
+
+          <h3>Beach Waves</h3>
+
+          <button
+            class="btn"
+            onclick="playSound('beachSound')"
+          >
+            Play
+          </button>
+
+          <button
+            class="btn"
+            onclick="pauseSound('beachSound')"
+          >
+            Pause
+          </button>
+
+          <audio
+            id="beachSound"
+            src="assets/audio/beach.mp3"
+          ></audio>
+
+        </div>
+
+        <!-- FOREST -->
+        <div class="audio-card">
+
+          <h3>Forest Nature</h3>
+
+          <button
+            class="btn"
+            onclick="playSound('forestSound')"
+          >
+            Play
+          </button>
+
+          <button
+            class="btn"
+            onclick="pauseSound('forestSound')"
+          >
+            Pause
+          </button>
+
+          <audio
+            id="forestSound"
+            src="assets/audio/forest.mp3"
+          ></audio>
+
+        </div>
+
+        <!-- CITY -->
+        <div class="audio-card">
+
+          <h3>City Ambience</h3>
+
+          <button
+            class="btn"
+            onclick="playSound('citySound')"
+          >
+            Play
+          </button>
+
+          <button
+            class="btn"
+            onclick="pauseSound('citySound')"
+          >
+            Pause
+          </button>
+
+          <audio
+            id="citySound"
+            src="assets/audio/city.mp3"
+          ></audio>
+
+        </div>
+
+      </div>
+
+      <!-- DESTINATION TRACKING -->
+      <div class="tracking-section">
+
+        <h2 class="section-title">
+          Track Your Destinations
+        </h2>
+
+        <div
+          class="tracking-grid"
+          id="trackingGrid"
+        >
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="js/destinations.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/mood.js"></script>
+
+</body>
+</html>
