@@ -40,21 +40,24 @@ body {
   display: inline-block;
   padding: 12px 24px;
 
-  background: #1565c0;
+  background-color: #003c8f;
   color: #ffffff;
 
   border: none;
   border-radius: 8px;
 
+  font-size: 16px;
   font-weight: 600;
-  text-decoration: none;
 
+  text-decoration: none;
   cursor: pointer;
+
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: #0d47a1;
+  background-color: #002a63;
+  color: #ffffff;
 }
 
 .btn:focus {
