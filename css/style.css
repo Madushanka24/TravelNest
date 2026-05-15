@@ -628,3 +628,8 @@ td {
 .faq-answer p {
   padding-bottom: 20px;
 }
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
